@@ -13,4 +13,9 @@ public class MainControllerTes {
     public String goHome() {
         return "home";
     }
+
+    @RequestMapping(value = "/swagger-test")
+    public String goToSwagger(){
+        return "/swagger/swagger-ui";
+    }
 }

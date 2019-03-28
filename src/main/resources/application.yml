@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    password: 1
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/testhello
+    username: postgres
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+#spring:
+#      thymeleaf:
+#        cache: false
+#        prefix: classpath:/templates
+server:
+  port: 8081
+#  context-path: /auth
+
+
